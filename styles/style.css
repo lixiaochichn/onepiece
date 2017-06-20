@@ -8,21 +8,20 @@
     margin-left: auto;
     margin-right: auto;
     transform-style: preserve-3d;
-    /*灞炴€х敤浜庢寚瀹氳瀵熻€呬笌 z=0 骞抽潰鐨勮窛绂伙紝浣垮叿鏈� 3D 鍙樻崲鐨勫厓绱犱骇鐢熼€忚鏁堟灉銆�*/
     transform-origin: center center;
     animation: roll 40s linear infinite;   
 }
 
 .luffy,.chopper,.sanji,.soge,.franky {
-  display: inline-block;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  border-radius: 4px;
-  background-size: contain;
-  background-repeat: no-repeat;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
 
 }
 
