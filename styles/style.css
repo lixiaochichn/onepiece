@@ -1,0 +1,55 @@
+
+.pirates {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    margin-left: auto;
+    margin-right: auto;
+    transform-style: preserve-3d;
+    /*灞炴€х敤浜庢寚瀹氳瀵熻€呬笌 z=0 骞抽潰鐨勮窛绂伙紝浣垮叿鏈� 3D 鍙樻崲鐨勫厓绱犱骇鐢熼€忚鏁堟灉銆�*/
+    transform-origin: center center;
+    animation: roll 40s linear infinite;   
+}
+
+.luffy,.chopper,.sanji,.soge,.franky {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+#pirates:hover {
+    animation-play-state: paused;
+}
+
+.luffy {
+      transform: rotateY(0deg) translateZ(200px);
+}
+.chopper {
+      transform: rotateY(72deg) translateZ(200px);
+}  
+.sanji {
+      transform: rotateY(144deg) translateZ(200px);
+}
+.soge {
+      transform: rotateY(216deg) translateZ(200px);
+}
+.franky {
+    transform: rotateY(288deg) translateZ(200px);
+}  
+@keyframes roll {
+    from {
+        transform: rotateY(0deg) translateZ(200px);
+    }
+    to {
+        transform: rotateY(360deg) translateZ(200px);
+    }
+}
