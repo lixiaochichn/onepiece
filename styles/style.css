@@ -1,4 +1,11 @@
 
+.scene {
+    perspective: 1000px;
+
+}
+
+
+
 .pirates {
     width: 200px;
     height: 200px;
@@ -24,8 +31,14 @@
     background-repeat: no-repeat;
 
 }
+.scene > .div > .img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
 
-#pirates:hover {
+
+.pirates:hover {
     animation-play-state: paused;
 }
 
@@ -46,9 +59,9 @@
 }  
 @keyframes roll {
     from {
-        transform: rotateY(0deg) translateZ(200px);
+        transform: rotateY(0deg);
     }
     to {
-        transform: rotateY(360deg) translateZ(200px);
+        transform: rotateY(360deg);
     }
 }
