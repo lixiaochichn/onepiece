@@ -8,8 +8,8 @@
 
 
 .pirates {
-    width: 200px;
-    height: 300px;
+    width: 180px;
+    height: 240px;
     cursor: pointer;
     position: relative;
     transform-style: preserve-3d;
@@ -17,7 +17,7 @@
     margin-right: auto;
     transform-style: preserve-3d;
     transform-origin: center center;
-    animation: roll 40s linear infinite;   
+    animation: roll 30s linear infinite;   
 }
 
 .luffy,.chopper,.sanji,.soge,.franky,.robin,.zoro,.nami {
@@ -42,7 +42,7 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    opacity: 0.7;
+    opacity: 0.8;
     left: 50%;
 
     transform: translate(-50%);
@@ -97,4 +97,17 @@
     to {
         transform: rotateY(360deg);
     }
+}
+
+video#onevid {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(one.png) no-repeat;
+    background-size: cover;
 }
